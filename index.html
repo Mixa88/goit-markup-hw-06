@@ -39,7 +39,13 @@
             >Web<span class="logo-text">Studio</span></a
           >
           <ul class="list">
-            <li><a class="nav-item nav-item-studio active link" href="./index.html">Studio</a></li>
+            <li>
+              <a
+                class="nav-item nav-item-studio active link"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
             <li>
               <a class="nav-item link" href="./portfolio.html">Portfolio</a>
             </li>
@@ -69,7 +75,9 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button data-modal-open class="button-hero" type="button">Order Service</button>
+          <button data-modal-open class="button-hero" type="button">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -383,10 +391,7 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-
       <div class="footer-container container">
-
-
         <div class="footer-info">
           <a class="footer-link-logo link" href="./index.html"
             >Web<span class="footer-logo-text">Studio</span></a
@@ -396,62 +401,103 @@
             digital marketing & growth solutions.
           </p>
         </div>
-            
-            <div>
-            <p class="social-desk">Social media</p>
-            <ul class="footer-list">
 
+        <div>
+          <p class="social-desk">Social media</p>
+          <ul class="footer-list">
+            <li class="footer-ic">
+              <a class="footer-link" href="">
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#social-instagram"></use>
+                </svg>
+              </a>
+            </li>
 
-              <li class="footer-ic">
-                <a class="footer-link" href="">
+            <li class="footer-ic">
+              <a class="footer-link" href="">
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#social-twitter"></use>
+                </svg>
+              </a>
+            </li>
 
-                  <svg class="footer-icon" width="24" height="24"><use href="./images/icons.svg#social-instagram"></use></svg>
-                </a>
-              </li>
-
-              <li class="footer-ic">
-                <a class="footer-link" href="">
-              
-                  <svg class="footer-icon" width="24" height="24">
-                    <use href="./images/icons.svg#social-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="footer-ic">
-                <a class="footer-link" href="">
-              
-                  <svg class="footer-icon" width="24" height="24">
-                    <use href="./images/icons.svg#social-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer-ic">
-                <a class="footer-link" href="">
-              
-                  <svg class="footer-icon" width="24" height="24">
-                    <use href="./images/icons.svg#social-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-
-            </ul>
-          </div>
+            <li class="footer-ic">
+              <a class="footer-link" href="">
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#social-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-ic">
+              <a class="footer-link" href="">
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#social-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
 
     <!-- Modal Window -->
 
-<div data-modal class="modal is-hidden">
+    <div data-modal class="modal is-hidden">
+      <div class="modal-window">
+        <button data-modal-close class="button-modal" type="button">
+          <svg class="button-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
 
-<div class="modal-window" >
+        <p>Leave your contacts and we will call you back</p>
 
-  <button data-modal-close class="button-modal" type="button"> <svg class="button-close-icon" width="8" height="8">  <use href="./images/icons.svg#close-icon"></use> </svg> </button>
-</div>
+        <form class="modal-form">
 
-</div>
+          <label for="modal-name">Name</label>
+          <div>
+            <input class="" type="text" name="modal-name" id="modal-name" />
+            <svg class="" width="18" height="18">
+              <use></use>
+            </svg>
+          </div>
 
-<script src="./js/modal.js"></script>
+          <label for="modal-phone">Phone</label>
+          <div>
+            <input class="" type="text" name="modal-phone" id="modal-phone" />
+            <svg class="" width="18" height="24">
+              <use></use>
+            </svg>
+          </div>
 
+          <label for="modal-email">Email</label>
+          <div>
+            <input class="" type="text" name="modal-email" id="modal-email" />
+            <svg class="" width="18" height="24">
+              <use></use>
+            </svg>
+          </div>
+
+          <label for="modal-comment">Comment</label>
+          <textarea
+            name="modal-comment"
+            id="modal-comment"
+            rows="5"
+            placeholder="Text input"></textarea>
+
+          <label>
+            <input type="checkbox" name="modal-agreement" />
+            <span
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></span
+            >
+          </label>
+
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
