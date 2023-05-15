@@ -713,9 +713,19 @@ ul {
 
   outline: transparent;
   outline-offset: -1px;
-  border-radius: 6px;
+  border-radius: 4px;
 
-  border: 2px solid;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:focus {
+  outline: 1px solid #4D5AE5;
+  box-shadow: 0 0 0 2px rgba(77, 90, 229, 0.25);
+}
+
+.form-field:focus + .form-icon {
+  fill: #4D5AE5;
 }
 
 .form-icon {
@@ -723,6 +733,8 @@ ul {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
 }
 
 /* Portfolio */
