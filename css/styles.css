@@ -878,14 +878,24 @@ ul {
   color: #4d5ae5;
 }
 
-.form-check-input {
+.checkbox-checked {
+  opacity: 0;
+    transition: 250ms;
 }
 
-.form-check-input:checked {
+.checkbox-unchecked {
+  opacity: 1;
+    transition: 250ms;
 }
 
-.form-check-input:focus-visible {
+.form-check-input:checked + .checkbox-icon > .checkbox-unchecked {
+  opacity: 0;
 }
+
+.form-check-input:checked + .checkbox-icon> .checkbox-checked {
+  opacity: 1;
+}
+
 
 .form-agreement-link {
   color: #4d5ae5;

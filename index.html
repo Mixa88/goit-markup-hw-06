@@ -510,7 +510,16 @@
             placeholder="Text input"></textarea>
 
           <label class="form-agreement">
-            <input class="form-check-input" type="checkbox" name="modal-agreement"/>
+            <input class="form-check-input visually-hidden" 
+            type="checkbox" name="modal-agreement"/>
+            
+            <svg class="checkbox-icon" width="16" height="16">
+              <use class="checkbox-unchecked" href="./images/icons.svg#uncheck"></use>
+              <use class="checkbox-checked" href="./images/icons.svg#checked"></use>
+              
+            </svg>
+        
+            
             <span class="form-agreement-text"
               >I accept the terms and conditions of the
               <a class="form-agreement-link" href="">Privacy Policy</a></span>
