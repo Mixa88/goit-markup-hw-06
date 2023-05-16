@@ -443,6 +443,7 @@
     <!-- Modal Window -->
 
     <div data-modal class="modal is-hidden">
+      
       <div class="modal-window">
         <button data-modal-close class="button-modal" type="button">
           <svg class="button-close-icon" width="8" height="8">
@@ -479,17 +480,19 @@
           </div>
 
           <label class="form-label" for="modal-comment">Comment</label>
-          <textarea
+          <textarea class="form-comment"
             name="modal-comment"
             id="modal-comment"
             rows="5"
             placeholder="Text input"></textarea>
 
-          <label>
-            <input type="checkbox" name="modal-agreement" />
-            <span
+          <label class="form-agreement">
+            <input class="form-check-input" type="checkbox" name="modal-agreement" />
+            <svg class="form-customcheck" width="" heigt="">
+            </svg>
+            <span class="form-agreement-text"
               >I accept the terms and conditions of the
-              <a href="">Privacy Policy</a></span
+              <a class="form-agreement-link" href="">Privacy Policy</a></span
             >
           </label>
 
